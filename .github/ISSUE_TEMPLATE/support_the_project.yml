@@ -2,7 +2,6 @@ name: Support Lambda Powertools
 description: Add your organisation's name or logo to the Lambda Powertools GitHub README
 title: "[Support Lambda Powertools]: <your organisation name>"
 labels: ["customer_reference"]
-assignees: ''
 body:
   - type: markdown
     attributes:
