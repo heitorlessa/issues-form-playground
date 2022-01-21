@@ -1,0 +1,56 @@
+name: Support Lambda Powertools
+description: Add your organisation's name or logo to the Lambda Powertools GitHub README
+title: "[Support the SDLF]: <your organisation name>"
+labels: ["customer_reference"]
+assignees: ''
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for letting us use your organisation's name on Lambda Powertools README page and letting other customers know that you support the project! 
+        
+        If you would like us to also display your organisation's logo. Please raise a linked pull request to provide an image file for the logo.
+
+        Please add any files to `docs/media/customers/`
+  - type: input
+    id: organization
+    attributes:
+      label: Organisation Name
+      description: Please share the name of your organisation
+      placeholder: ACME
+    validations:
+      required: true
+  - type: input
+    id: name
+    attributes:
+      label: Your Name
+      description: Please share your name
+    validations:
+      required: true
+  - type: input
+    id: job
+    attributes:
+      label: Your current position
+      description: Please share your current position at your company
+    validations:
+      required: true
+  - type: checkboxes
+    id: logo
+    attributes:
+      label: (Optional) Company logo
+      description: Acknowledgement whether you're including a logo
+      options:
+        - label: I have included a logo
+          required: false
+  - type: textarea
+    id: use_case
+    attributes:
+      label: (Optional) Use case
+      description: How are you using Lambda Powertools today?
+    validations:
+      required: false
+  - type: markdown
+    attributes:
+      value: |
+        *By raising a Support Lambda Powertools issue (and related pull request), you are granting AWS permission to use your company’s name (and logo) for the limited purpose described here and you are confirming that you have authority to grant such permission.*
+
