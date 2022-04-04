@@ -6,7 +6,9 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thank you for submitting a bug report. Please add as much information as possible to help us reproduce, optionally leaving a suggested fix to help speed up a fix.
+        Thank you for submitting a bug report. Please add as much information as possible to help us reproduce.
+
+        Please remove or anonymize any sensitive data your report might contain.
   - type: textarea
     id: expected_behaviour
     attributes:
@@ -56,10 +58,10 @@ body:
     attributes:
       label: AWS Lambda function runtime
       options:
-        - label: 3.6
-        - label: 3.7
-        - label: 3.8
-        - label: 3.9
+        - label: "3.6"
+        - label: "3.7"
+        - label: "3.8"
+        - label: "3.9"
     validations:
       required: true
   - type: dropdown
@@ -67,9 +69,9 @@ body:
     attributes:
       label: Packaging format used
       options:
-        - label: Lambda Layers
-        - label: Serverless Application Repository (SAR) App
-        - label: PyPi
+        - label: "Lambda Layers"
+        - label: "Serverless Application Repository (SAR) App"
+        - label: "PyPi"
       multiple: true
     validations:
       required: true
