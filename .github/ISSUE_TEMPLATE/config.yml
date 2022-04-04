@@ -4,5 +4,5 @@ contact_links:
     url: https://github.community/https://join.slack.com/t/awsdevelopers/shared_invite/zt-yryddays-C9fkWrmguDv0h2EEDzCqvw
     about: Join `#lambda-powertools` after sign up.
   - name: AWS Lambda Powertools Email Feedback channel
-    url: mailto:aws-lambda-powertools-feedback@amazon.com
+    url: aws-lambda-powertools-feedback@amazon.com
     about: Please report any feedback or issue that might contain sensitive data.
