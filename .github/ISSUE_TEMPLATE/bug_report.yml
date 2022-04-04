@@ -27,7 +27,7 @@ body:
     id: code_snippet
     attributes:
       label: Code snippet
-      description: Please share a code snippet to help us reproduce the issue. Please anonymize any sensitive data.
+      description: Please share a code snippet to help us reproduce the issue. .
       render: python
     validations:
       required: true
@@ -79,7 +79,7 @@ body:
     id: logs
     attributes:
       label: Debugging logs
-      description: If available, please share [debugging logs](https://awslabs.github.io/aws-lambda-powertools-python/#debug-mode)
+      description: If available, please share [debugging logs](https://awslabs.github.io/aws-lambda-powertools-python/#debug-mode){target="_blank"}
       render: python
     validations:
       required: false
