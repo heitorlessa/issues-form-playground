@@ -1,46 +1,87 @@
-name: Feature request
-description: Suggest an idea for Lambda Powertools
-title: "Feature request: TITLE"
-labels: ["feature-request", "triage"]
+name: Bug report
+description: Report a reproducible bug to help us improve
+title: "Bug: TITLE"
+labels: ["bug", "triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for taking the time to suggest an idea to the Lambda Powertools project. 
-
-        *Future readers*: Please react with 👍 and your use case to help us understand customer demand.
+        Thank you for submitting a bug report. Please add as much information as possible to help us reproduce, and remove any potential sensitive data.
   - type: textarea
-    id: problem
+    id: expected_behaviour
     attributes:
-      label: Use case
-      description: Please help us understand your use case or problem you're facing
+      label: Expected Behaviour
+      description: Please share details on the behaviour you expected
     validations:
       required: true
   - type: textarea
-    id: suggestion
+    id: current_behaviour
     attributes:
-      label: Solution/User Experience
-      description: Please share what a good solution would look like to this use case
+      label: Current Behaviour
+      description: Please share details on the current issue
     validations:
       required: true
   - type: textarea
-    id: alternatives
+    id: code_snippet
     attributes:
-      label: Alternative solutions
-      description: Please describe what alternative solutions to this use case, if any
-      render: markdown
+      label: Code snippet
+      description: Please share a code snippet to help us reproduce the issue
+      render: python
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Possible Solution
+      description: If known, please suggest a potential resolution
     validations:
       required: false
-  - type: checkboxes
-    id: acknowledgment
+  - type: textarea
+    id: steps
     attributes:
-      label: Acknowledgment
+      label: Steps to Reproduce
+      description: Please share how we might be able to reproduce this issue
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: AWS Lambda Powertools for Python version
+      placeholder: "latest, 1.25.6"
+      value: latest
+    validations:
+      required: true
+  - type: dropdown
+    id: runtime
+    attributes:
+      label: AWS Lambda function runtime
       options:
-        - label: This feature request meets [Lambda Powertools Tenets](https://awslabs.github.io/aws-lambda-powertools-python/latest/#tenets)
-          required: true
-        - label: Should this be considered in other Lambda Powertools languages? i.e. [Java](https://github.com/awslabs/aws-lambda-powertools-java/), [TypeScript](https://github.com/awslabs/aws-lambda-powertools-typescript/)
-          required: false
+        - label: "3.6"
+        - label: "3.7"
+        - label: "3.8"
+        - label: "3.9"
+    validations:
+      required: true
+  - type: dropdown
+    id: packaging
+    attributes:
+      label: Packaging format used
+      options:
+        - label: "Lambda Layers"
+        - label: "Serverless Application Repository (SAR) App"
+        - label: "PyPi"
+      multiple: true
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Debugging logs
+      description: If available, please share [debugging logs](https://awslabs.github.io/aws-lambda-powertools-python/#debug-mode)
+      render: python
+    validations:
+      required: false
   - type: markdown
     attributes:
       value: |
-        We value your time and bandwidth. As such, any pull requests that created on non-triaged issues might not be successful.
+        We value your time and bandwidth. As such, any pull requests created on non-triaged issues might not be successful.
