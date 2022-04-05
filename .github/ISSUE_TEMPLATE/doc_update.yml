@@ -1,6 +1,6 @@
 name: Documentation improvements
 description: Suggest a documentation update to improve everyone's experience
-title: "Docs: TITLE"
+title: ""
 labels: ["documentation", "triage"]
 body:
   - type: markdown
