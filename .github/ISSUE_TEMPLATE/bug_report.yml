@@ -84,4 +84,6 @@ body:
   - type: markdown
     attributes:
       value: |
+        ---
+
         We value your time and bandwidth. As such, any pull requests created on non-triaged issues might not be successful.
