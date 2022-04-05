@@ -1,6 +1,6 @@
 name: Documentation improvements
 description: Suggest a documentation update to improve everyone's experience
-title: "Docs: "
+title: "Docs: TITLE"
 labels: ["documentation", "triage"]
 body:
   - type: markdown
@@ -28,7 +28,7 @@ body:
       description: Please share your thoughts on how we can improve this experience
       render: markdown
     validations:
-      required: false
+      required: true
   - type: textarea
     id: suggestion
     attributes:
@@ -36,13 +36,6 @@ body:
       description: Please suggest a proposed update
     validations:
       required: false
-  - type: textarea
-    id: steps
-    attributes:
-      label: Steps to Reproduce
-      description: Please share how we might be able to reproduce this issue
-    validations:
-      required: true
   - type: checkboxes
     id: acknowledgment
     attributes:
