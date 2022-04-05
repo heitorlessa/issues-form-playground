@@ -1,0 +1,53 @@
+name: Documentation improvements
+description: Suggest a documentation update to improve everyone's experience
+title: "Docs: "
+labels: ["documentation", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve everyone's experience. We review documentation updates on a case by case basis.
+  - type: textarea
+    id: search_area
+    attributes:
+      label: What were you searching in the docs?
+      description: Please help us understand how you looked for information that was either unclear or not available
+    validations:
+      required: true
+  - type: input
+    id: area
+    attributes:
+      label: Is this related to an existing documentation section?
+      description: Please share a link, if applicable
+      render: markdown
+    validations:
+      required: false
+  - type: textarea
+    id: idea
+    attributes:
+      label: How can we improve?
+      description: Please share your thoughts on how we can improve this experience
+      render: markdown
+    validations:
+      required: false
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Got a suggestion in mind?
+      description: Please suggest a proposed update
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: Please share how we might be able to reproduce this issue
+    validations:
+      required: true
+  - type: checkboxes
+    id: acknowledgment
+    attributes:
+      label: Acknowledgment
+      required: true
+      options:
+        - label: *I understand the final update might be different from my proposed suggestion, or refused.*
