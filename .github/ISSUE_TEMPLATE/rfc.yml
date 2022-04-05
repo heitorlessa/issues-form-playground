@@ -100,6 +100,8 @@ body:
   - type: markdown
     attributes:
       value: |
+        ---
+        
         Metadata information for admin purposes, please leave them empty.
 
         * RFC PR:
