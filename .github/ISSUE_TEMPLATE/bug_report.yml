@@ -56,10 +56,10 @@ body:
     attributes:
       label: AWS Lambda function runtime
       options:
-        - label: "3.6"
-        - label: "3.7"
-        - label: "3.8"
-        - label: "3.9" (default)
+        - label: 3.6
+        - label: 3.7
+        - label: 3.8
+        - label: 3.9
     validations:
       required: true
   - type: dropdown
