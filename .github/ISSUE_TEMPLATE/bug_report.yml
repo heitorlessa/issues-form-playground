@@ -59,7 +59,7 @@ body:
         - label: "3.6"
         - label: "3.7"
         - label: "3.8"
-        - label: "3.9"
+        - label: "3.9" (default)
     validations:
       required: true
   - type: dropdown
