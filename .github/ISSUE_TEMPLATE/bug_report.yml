@@ -65,7 +65,7 @@ body:
   - type: dropdown
     id: packaging
     attributes:
-      label: Packaging format used
+      label: "Packaging format used"
       options:
         - label: "Lambda Layers"
         - label: "Serverless Application Repository (SAR) App"
