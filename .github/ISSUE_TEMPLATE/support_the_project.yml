@@ -36,8 +36,8 @@ body:
     attributes:
       label: (Optional) Company logo
       description: Company logo you want us to display. You also allow us to resize for optimal placement in the documentation.
-      validations:
-        required: false
+    validations:
+      required: false
   - type: textarea
     id: use_case
     attributes:
