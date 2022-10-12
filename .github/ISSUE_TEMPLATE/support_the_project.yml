@@ -50,11 +50,11 @@ body:
     attributes:
       label: Also using other Lambda Powertools languages?
       options:
-        - label: [Java](https://awslabs.github.io/aws-lambda-powertools-java/)
+        - label: Java
           required: false
-        - label: [TypeScript](https://awslabs.github.io/aws-lambda-powertools-typescript/)
+        - label: TypeScript
           required: false
-        - label: [.NET](https://awslabs.github.io/aws-lambda-powertools-dotnet/)
+        - label: .NET
           required: false
   - type: markdown
     attributes:
