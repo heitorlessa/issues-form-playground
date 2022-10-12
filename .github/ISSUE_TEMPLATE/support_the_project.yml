@@ -1,21 +1,19 @@
-name: Support Lambda Powertools
-description: Add your organisation's name or logo to the Lambda Powertools GitHub README
-title: "[Support Lambda Powertools]: <your organisation name>"
+name: Support Lambda Powertools (become a reference)
+description: Add your organization's name or logo to the Lambda Powertools documentation
+title: "[Support Lambda Powertools]: <your organization name>"
 labels: ["customer_reference"]
 body:
   - type: markdown
     attributes:
       value: |
-        Thank you for letting us use your organisation's name on Lambda Powertools README page and letting other customers know that you support the project! 
-        
-        If you would like us to also display your organisation's logo. Please raise a linked pull request to provide an image file for the logo.
+        Thank you for becoming a reference customer. Your support means a lot to us, and for new customers to know who's using it.
 
-        Please add any files to `docs/media/customers/`
+        If you would like us to also display your organization's logo, please share a link in `Company logo` field.
   - type: input
     id: organization
     attributes:
-      label: Organisation Name
-      description: Please share the name of your organisation
+      label: Organization Name
+      description: Please share the name of your organization
       placeholder: ACME
     validations:
       required: true
@@ -33,23 +31,34 @@ body:
       description: Please share your current position at your company
     validations:
       required: true
-  - type: checkboxes
+  - type: input
     id: logo
     attributes:
       label: (Optional) Company logo
-      description: Acknowledgement whether you're including a logo
-      options:
-        - label: I have included a logo
-          required: false
+      description: Company logo you want us to display. You also allow us to resize for optimal placement in the documentation.
+      validations:
+        required: false
   - type: textarea
     id: use_case
     attributes:
       label: (Optional) Use case
-      description: How are you using Lambda Powertools today?
+      description: How are you using Lambda Powertools today? *features, etc.*
     validations:
       required: false
+  - type: checkboxes
+    id: other_languages
+    attributes:
+      label: Also using other Lambda Powertools languages?
+      options:
+        - label: [Java](https://awslabs.github.io/aws-lambda-powertools-java/)
+          required: false
+        - label: [TypeScript](https://awslabs.github.io/aws-lambda-powertools-typescript/)
+          required: false
+        - label: [.NET](https://awslabs.github.io/aws-lambda-powertools-dotnet/)
+          required: false
   - type: markdown
     attributes:
       value: |
-        *By raising a Support Lambda Powertools issue (and related pull request), you are granting AWS permission to use your company’s name (and logo) for the limited purpose described here and you are confirming that you have authority to grant such permission.*
+        *By raising a Support Lambda Powertools issue, you are granting AWS permission to use your company's name (and/or logo) for the limited purpose described here, and you are confirming that you have authority to grant such permission.*
 
+        *You can opt-out at any time by commenting or reopening this issue.*
