@@ -37,13 +37,6 @@ body:
       description: If different from preferred contact, what's your preferred contact for social interactions?
     validations:
       required: false
-  - type: checkboxes
-    id: acknowledgment
-    attributes:
-      label: Acknowledgment
-      options:
-        - label: I understand this content may be removed from Powertools documentation if it doesn't conform with the [Code of Conduct](https://aws.github.io/code-of-conduct)
-          required: true
   - type: textarea
     id: notes
     attributes:
@@ -54,3 +47,10 @@ body:
         *Note: These notes are explicitly to Powertools maintainers. It will not be added to the community resources page.*
     validations:
       required: false
+  - type: checkboxes
+    id: acknowledgment
+    attributes:
+      label: Acknowledgment
+      options:
+        - label: I understand this content may be removed from Powertools documentation if it doesn't conform with the [Code of Conduct](https://aws.github.io/code-of-conduct)
+          required: true
