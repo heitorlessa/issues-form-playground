@@ -1,12 +1,12 @@
+
 name: I Made This (showcase your work)
-description: Share what you did with Powertools ❤️, e.g., blog post, workshops, presentation, sample apps, etc.
+description: Share what you did with Powertools ❤️, *e.g., blog post, workshops, presentation, sample apps, etc.*
 title: "[I Made This]: <TITLE>"
 labels: ["customer_reference"]
 body:
   - type: markdown
     attributes:
-      value: |
-        Thank you for helping spread the word out on Powertools, truly!
+      value: Thank you for helping spread the word out on Powertools, truly!
   - type: input
     id: content
     attributes:
