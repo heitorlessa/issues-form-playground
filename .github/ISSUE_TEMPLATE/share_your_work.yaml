@@ -1,7 +1,5 @@
-# Add link to the Community Resources page so they know where this will land.
-
 name: I Made This (showcase your work)
-description: Share what you did with Powertools 💞. Blog post, workshops, presentation, sample apps, etc.
+description: Share what you did with Powertools 💞💞. Blog post, workshops, presentation, sample apps, etc.
 title: "[I Made This]: <TITLE>"
 labels: ["customer_reference"]
 body:
@@ -29,9 +27,16 @@ body:
     id: author
     attributes:
       label: Preferred contact
-      description: What's the preferred contact we should link next to this material?
+      description: What's your preferred contact? We'll list it next to this content
     validations:
       required: true
+  - type: input
+    id: author-social
+    attributes:
+      label: (Optional) Social Network
+      description: If different from preferred contact, what's your preferred contact for social interactions?
+    validations:
+      required: false
   - type: checkboxes
     id: acknowledgment
     attributes:
