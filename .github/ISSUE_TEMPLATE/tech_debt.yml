@@ -5,7 +5,7 @@ labels: ["tech-debt", "triage"]
 body:
   - type: markdown
     attributes:
-      value: Thank you for taking the time to help us improve maintenance and proactively improve delivery velocity.
+      value: Thank you for taking the time to help us proactively improve delivery velocity, safely.
   - type: textarea
     id: importance
     attributes:
