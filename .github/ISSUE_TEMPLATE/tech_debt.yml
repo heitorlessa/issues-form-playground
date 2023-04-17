@@ -35,6 +35,7 @@ body:
         - Idempotency
         - Feature flags
         - JMESPath functions
+        - Streaming
         - Automation
         - Other
   - type: textarea
